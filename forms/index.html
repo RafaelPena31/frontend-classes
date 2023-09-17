@@ -3,102 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>72200430</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="container">
-      <h2 class="title">Ficha Cadastral</h2>
+    <h2>Ficha Cadastral</h2>
 
-      <form action="">
-        <div class="form-input">
-          <label for="name">Nome:</label>
-          <input
-            type="text"
-            name="name"
-            id=""
-            class="txt-box"
-            maxlength="55"
-            required
-          />
-        </div>
+    <img src="https://picsum.photos/200" alt="logo" />
 
-        <div class="form-input">
-          <label for="rg">RG:</label>
-          <input
-            type="text"
-            name="rg"
-            id=""
-            class="txt-box"
-            maxlength="13"
-            required
-          />
+    <form action="">
+      <label for="name"> Nome </label>
+      <input
+        name="name"
+        type="text"
+        maxlength="55"
+        required
+        class="full-txt-box"
+      />
 
-          <label for="cpf">C.P.F.:</label>
-          <input
-            type="text"
-            name="cpf"
-            id=""
-            class="txt-box"
-            maxlength="11"
-            required
-          />
-        </div>
+      <label for="rg">RG:</label>
+      <input name="rg" type="text" maxlength="13" required />
 
-        <div class="form-input">
-          <label for="address">Endereço:</label>
-          <input
-            type="text"
-            name="address"
-            id=""
-            class="txt-box"
-            maxlength="55"
-            required
-          />
-        </div>
+      <label for="cpf">C.P.F.:</label>
+      <input name="cpf" type="text" maxlength="11" required />
 
-        <div class="form-input">
-          <label for="gender">Sexo:</label>
-          <select name="genders" id="" required>
-            <option value="male">Masculino</option>
-            <option value="female">Feminino</option>
-            <option value="other">Outros</option>
-          </select>
+      <label for="address">Endereço</label>
+      <input
+        type="text"
+        name="address"
+        maxlength="55"
+        required
+        class="full-txt-box"
+      />
 
-          <input type="text" name="birth" id="" class="txt-box" />
-        </div>
+      <label for="gender">Sexo</label>
 
-        <div class="form-input">
-          <p>Data Nascimento:</p>
-          <input
-            type="radio"
-            id="single"
-            name="marital_status"
-            value="single"
-            maxlength="13"
-            required
-          />
-          <label for="single">Solteiro</label><br />
-          <input
-            type="radio"
-            id="married"
-            name="marital_status"
-            value="married"
-            required
-          />
-          <label for="married">Casado</label><br />
-          <input
-            type="radio"
-            id="widower"
-            name="marital_status"
-            value="widower"
-            required
-          />
-          <label for="widower">Viúvo</label><br />
-        </div>
+      <select name="gender" required>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="none">Não informar</option>
+      </select>
 
-        <button type="reset">Limpar Dados</button>
-      </form>
-    </div>
+      <label for="birth">Data Nascimento</label>
+      <input name="birth" type="date" maxlength="13" required />
+
+      <label for="maritalStatus">Situação Civil</label>
+
+      <div class="marital_status-container">
+        <input type="radio" name="maritalStatus" required />Solteiro
+        <input type="radio" name="maritalStatus" required />Casado
+        <input type="radio" name="maritalStatus" required />Divorciado
+      </div>
+
+      <label for="email"> Email </label>
+      <input name="email" type="email" required class="full-txt-box" />
+
+      <label for="phone"> Telefone </label>
+      <input name="phone" type="number" required class="full-txt-box" />
+
+      <label for="education">Escolaridade</label>
+      <select name="education" required class="full-txt-box">
+        <option value="elementary">Fundamental</option>
+        <option value="high">Médio</option>
+        <option value="incomplete_higher">Superior Incompleto</option>
+        <option value="graduated">Superior Completo</option>
+        <option value="master">Mestrado</option>
+        <option value="doctor">Doutorado</option>
+      </select>
+
+      <label for="obs"> Observações </label>
+      <textarea name="obs" required class="full-txt-box"></textarea>
+
+      <label for="login"> Login </label>
+      <input name="login" type="text" required class="full-txt-box" />
+
+      <label for="pwd"> Senha </label>
+      <input name="pwd" type="password" required class="full-txt-box" />
+
+      <input type="reset" class="button" />
+      <input type="submit" class="button" />
+    </form>
   </body>
 </html>
