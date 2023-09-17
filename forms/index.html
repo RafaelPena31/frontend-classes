@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>72200430</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Ficha Cadastral</h2>
+
+      <form action="">
+        <div class="form-input">
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            name="name"
+            id=""
+            class="txt-box"
+            maxlength="55"
+            required
+          />
+        </div>
+
+        <div class="form-input">
+          <label for="rg">RG:</label>
+          <input
+            type="text"
+            name="rg"
+            id=""
+            class="txt-box"
+            maxlength="13"
+            required
+          />
+
+          <label for="cpf">C.P.F.:</label>
+          <input
+            type="text"
+            name="cpf"
+            id=""
+            class="txt-box"
+            maxlength="11"
+            required
+          />
+        </div>
+
+        <div class="form-input">
+          <label for="address">Endereço:</label>
+          <input
+            type="text"
+            name="address"
+            id=""
+            class="txt-box"
+            maxlength="55"
+            required
+          />
+        </div>
+
+        <div class="form-input">
+          <label for="gender">Sexo:</label>
+          <select name="genders" id="" required>
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+            <option value="other">Outros</option>
+          </select>
+
+          <input type="text" name="birth" id="" class="txt-box" />
+        </div>
+
+        <div class="form-input">
+          <p>Data Nascimento:</p>
+          <input
+            type="radio"
+            id="single"
+            name="marital_status"
+            value="single"
+            maxlength="13"
+            required
+          />
+          <label for="single">Solteiro</label><br />
+          <input
+            type="radio"
+            id="married"
+            name="marital_status"
+            value="married"
+            required
+          />
+          <label for="married">Casado</label><br />
+          <input
+            type="radio"
+            id="widower"
+            name="marital_status"
+            value="widower"
+            required
+          />
+          <label for="widower">Viúvo</label><br />
+        </div>
+
+        <button type="reset">Limpar Dados</button>
+      </form>
+    </div>
+  </body>
+</html>
